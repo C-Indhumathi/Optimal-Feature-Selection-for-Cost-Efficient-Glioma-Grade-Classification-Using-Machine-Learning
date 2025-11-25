@@ -1,4 +1,4 @@
-# Capstone Project: Optimal Feature Selection for Cost Efficient Glioma Grade Classification Using Machine Learning
+# Capstone Project: Optimal Feature Selection for Cost Efficient Glioma Tumor Grade Classification Using Machine Learning
 ![Dashboard Page 0](images/dashboard1.png)
 ## 1. Project Overview
 

@@ -1,5 +1,5 @@
 # Capstone Project: Optimal Feature Selection for Cost Efficient Glioma Grade Classification Using Machine Learning
-![Dashboard Page 0](images/dashboard0.png)
+![Dashboard Page 0](images/dashboard1.png)
 ## 1. Project Overview
 
 This project focuses on developing a robust and parsimonious (minimal) classification model to accurately distinguish between **Lower Grade Glioma (LGG)** and **Glioblastoma (GBM)**. The classification utilizes a blend of clinical features (Age, Gender, Race) and a panel of 20 common molecular mutation markers.

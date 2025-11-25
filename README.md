@@ -51,13 +51,14 @@ The dataset provided was already pre-processed by TCGA and contained **no missin
 ## 4. Data Analysis and Key Clinical & Molecular Findings
 Initial Exploratory Data Analysis (EDA) revealed critical relationships for classifying tumor grade:
 ### 4.1. Key Clinical Features Analysis and Findings 
-
+![Dashboard Page 0](images/dashboard1.png)
   | **Feature**         | **Observation**                                                                                         | **Significance**                                                                                     |
 |---------------------|---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | **Age at Diagnosis** | Highly predictive; LGG peaks at 35–45 years, while GBM peaks at 60–70 years. Age 60 is a critical decision threshold. | Confirms age as the most powerful clinical differentiator.                                             |
 | **Gender**          | Consistent male predominance in both grades, but significantly stronger in GBM than LGG.                | Suggests gender bias increases with tumor malignancy.                                                 |
 | **Race**            | Severe sampling bias (91% White). The African American subgroup showed a reversed grade ratio (more GBM than LGG). | Inclusion of race was determined to be suboptimal due to ethical concerns and lack of generalizability. |
 ### 4.2. Key Molecular Features Analysis and Findings 
+![Dashboard Page 0](images/dashboard2.png)
 | **Analysis**                   | **Observation**                                                                                          | **Significance**                                                                                       |
 |------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Overall Mutation Frequency** | The most prevalent mutations across the entire cohort are **IDH1**, followed by **TP53** and **ATRX**.     | These genes are fundamental drivers in the development of gliomas.                                      |
@@ -65,7 +66,7 @@ Initial Exploratory Data Analysis (EDA) revealed critical relationships for clas
 | **Mutation Profile by Grade** | The extreme contrast in **IDH1** and **PTEN** mutation profiles forms the biological foundation of the model. | Shows strong, opposing signals that drive the final grade prediction.                                   |
 | **Co-Mutation Correlation**  | The strongest positive correlation is between **IDH1** and **ATRX**.                                        | Confirmed no evidence of extreme multicollinearity.                                                     |
 ## 5. Feature Selection Methodology
-
+![Dashboard Page 0](images/dashboard3.png)
 A rigorous, two-stage feature selection pipeline was implemented to refine the initial set of **23 candidate features**.
 
 ### **Stage 1: Random Forest Ranking**
@@ -90,6 +91,7 @@ The final model is based on the following 8 features:
 | **IDH2**            | —                                | Secondary IDH mutation.                                          |
 | **Race**            | —                                | Weak linear predictor; kept for model stability/completeness.    |
 ## 7. Model Evaluation and Final Selection
+![Dashboard Page 0](images/dashboard4.png)
 Three different classifiers were trained and evaluated on the optimal 8-feature subset.
 ### 7.1 Overall Performance
 
